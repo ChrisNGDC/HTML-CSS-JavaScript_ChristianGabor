@@ -6,7 +6,7 @@ let btnReinicio = document.querySelector('#btnReinicio');
 
 function adivinar() {
     if (input.value <= 10 && input.value >= 1) {
-        if (input.value == 1 /*randNumber*/) {
+        if (input.value == randNumber) {
             messages.style.padding = '1rem .5rem 0';
             changeMessagesText('CORRECTO', '#00FF00').then(res => {
                 btnGuess.disabled = true;
