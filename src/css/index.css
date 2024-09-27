@@ -49,6 +49,7 @@ label,
 #btnAdivinar:enabled,
 #btnReinicio {
     background-color: #FFFFFF;
+    border: #000000 solid 1px;
     border-radius: .25rem;
     color: #000000;
     cursor: pointer;
@@ -56,17 +57,22 @@ label,
 }
 
 #btnAdivinar:enabled:hover,
-#btnReinicio:hover {
+#btnReinicio:enabled:hover {
     transform: scale(1.2);
-    background-color: #e0e0e0;
+    font-weight: 900;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: #FFFFFF solid 1px;
 }
 
-#btnAdivinar:disabled {
-    background-color: #c4c4c4;
+#btnAdivinar:disabled,
+#btnReinicio:disabled {
+    background-color: #959595;
     border-radius: .25rem;
+    text-decoration: line-through;
     color: #000000;
     cursor: not-allowed;
-    transition: none;
+    transition: all 500ms;
 }
 
 #messages {
@@ -78,6 +84,6 @@ label,
     margin: 0 auto .5rem;
 }
 
-#btnReinicio {
+#btnReinicio:disabled {
     visibility: hidden;
 }
