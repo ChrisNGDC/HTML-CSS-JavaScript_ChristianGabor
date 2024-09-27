@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label,
+#inputNumber,
+#btnAdivinar,
+#messages {
+    margin-bottom: .5rem;
+}
+
+#inputNumber,
+#btnAdivinar,
+#messages,
+#btnReinicio {
+    color: #000000;
+    padding: .5rem;
+    min-height: 2.5rem;
+}
+
+#inputNumber {
+    margin-right: .5rem;
+    text-align: center;
+}
+
+#inputNumber::-webkit-outer-spin-button,
+#inputNumber::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#btnAdivinar:enabled,
+#btnReinicio {
+    background-color: #FFFFFF;
+    border-radius: .25rem;
+    color: #000000;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+#btnAdivinar:enabled:hover,
+#btnReinicio:hover {
+    transform: scale(1.2);
+    background-color: #e0e0e0;
+}
+
+#btnAdivinar:disabled {
+    background-color: #c4c4c4;
+    border-radius: .25rem;
+    color: #000000;
+    cursor: not-allowed;
+    transition: none;
+}
+
+#messages {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #000000;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto .5rem;
+}
+
+#btnReinicio {
+    visibility: hidden;
+}

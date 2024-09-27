@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <title>AdivinAR</title>
+  </head>
+  <body>
+    <label for="inputNumber">Ingrese un numero entre 1 y 10</label>
+    <div>
+      <input type="number" name="inputNumber" id="inputNumber" required min="1" max="10"/>
+      <button id="btnAdivinar" type="submit" onclick="adivinar()">Adivinar</button>
+    </div>
+    <p id="messages"></p>
+    <button for="inputNumber" id="btnReinicio" onclick="reset()" type="reset">Reiniciar</button>
+  </body>
+  <script src="./src/js/index.js"></script>
+</html>
